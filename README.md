@@ -1,7 +1,7 @@
 # NodeJS
 Creating a script that will take a JSON object and import the JSON path for the corresponding values
 
-let my object is as below:
+let the object is as below:
 
 let obj  = {
   name: "Purvee Agrawal",
@@ -20,7 +20,7 @@ let obj  = {
   }
 }
 
-so, what the script is going to do is:
+so, what the first script(exportObjectToCSV.js) is going to do is:
 
 -> It will store the above object in a CSV file as below:
 
@@ -31,3 +31,24 @@ address.personal.state          WB
 address.personal.area           Salt Lake
 address.business.city           Bangalore
 address.business.area.landmark  Airport
+
+
+Now the second script(TransformCSVDataToJSON.js) will convert the above path again and value back to the JSON object:
+{
+  name: "Purvee Agrawal",
+  address: {
+    personal: {
+      city: "Kolkata",
+      state: "WB",
+      area: "Salt Lake",
+    },
+    business: {
+      city: "Bangalore",
+      area: {
+        landmark: "Airport",
+      }
+    }
+  }
+}
+
+and it will store this object to a JSON file.
