@@ -1,5 +1,5 @@
 # NodeJS
-Creating a script that will take a JSON object and import the JSON path for the corresponding values
+Creating a script that will take a JSON object and import the JSON path and the corresponding values in a CSV file
 
 let the object is as below:
 
